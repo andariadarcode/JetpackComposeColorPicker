@@ -45,8 +45,7 @@ fun ColorPicker() {
         verticalArrangement = Arrangement.Center,
         modifier = Modifier.fillMaxSize()
     ) {
-        Row(
-            modifier = Modifier.padding(20.dp)) {
+        Row {
             colors.forEach { color ->
                 val isSelected = currentColor.value == color
                 Box(
